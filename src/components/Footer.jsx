@@ -2,7 +2,7 @@ function Footer() {
   return (
     <footer> 
         <p> @ {new Date().getFullYear()} Henry Kusi </p>
-        <a href="mailto:isaac14@yahoo.com">Contact Me</a>
+        <a href="mailto:k.isaac14@yahoo.com">Contact Me</a>
     </footer>
   );
 }

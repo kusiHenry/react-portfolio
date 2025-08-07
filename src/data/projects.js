@@ -43,10 +43,10 @@ export const projectData = [
   },
   {
     title: "Weekly Challenge 7 - Full Stack Notes Application using Node and Express",
-    tech: "HTML, CSS",
+    tech: "HTML, JavaScript",
     description: "A static landing page.",
     image: "../assets/landing-page.png",
-    link: "https://github.com/kusiHenry/week7"
+    link: "https://github.com/kusiHenry/note-taking-app.git"
   },
   {
     title: "Weekly Challenge 8 - Full Stack Tech Blog Application",

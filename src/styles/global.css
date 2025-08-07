@@ -1,66 +1,114 @@
 
 /* my styling starts here */
+
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  color: #333;
 }
 
-.header, .footer {
-  background: #1f2937;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-
-nav a {
-  color: white;
-  margin: 0 1rem;
-  text-decoration: none;
-}
-
-.home, .projects {
-  padding: 2rem;
-}
-
-.project-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
-
-.project-card {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .header, .footer {
-    font-size: 0.9rem;
-  }
-
-  .project-gallery {
-    grid-template-columns: 1fr;
-  }
-}
-
-
+/* Header */
 .header {
-  background: #1f2937;
+  background-color: #1f2937;
   color: white;
-  padding: 1rem;
-  text-align: center;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 nav button {
-  margin: 0 0.5rem;
-  padding: 0.5rem 1rem;
+  margin-left: 1rem;
   background: #4caf50;
   color: white;
   border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 nav button:hover {
-  background: #45a049;
+  background-color: #45a049;
+}
+
+/* Footer */
+.footer {
+  background: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Page Content */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Project Gallery */
+.project-gallery {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 1.5rem;
+}
+
+/* Project Card */
+.project-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.project-card p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}
+
+.project-card a {
+  margin-top: 0.8rem;
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.project-card a:hover {
+  background: #3e8e41;
 }

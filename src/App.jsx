@@ -10,6 +10,7 @@ function App() {
 
   return (
     <div>
+      <Header onNavigate={setPage} />
         {page === "home" && <Home />}
         {page === "projects" && <Projects />}
       <Footer />
